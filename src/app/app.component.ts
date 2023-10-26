@@ -15,8 +15,8 @@ export class AppComponent {
   }
 
   signInWithAmazon(): any {
-    this.authServiceSSO.signIn(AmazonLoginProvider.PROVIDER_ID).then(()=>{
-      this.authServiceSSO.authState.subscribe((user:SocialUser) => {
+    this.authServiceSSO.signIn(AmazonLoginProvider.PROVIDER_ID).then(() => {
+      this.authServiceSSO.authState.subscribe((user: SocialUser) => {
         console.log(user);
       });
     });
