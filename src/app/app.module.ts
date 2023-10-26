@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import {AmazonLoginProvider, SocialLoginModule, SocialAuthServiceConfig} from 'angularx-social-login';
 import {ReactiveFormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { SuccessComponent } from './success/success.component';
+import { FailComponent } from './fail/fail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    SuccessComponent,
+    FailComponent
   ],
   imports: [
     BrowserModule,
